@@ -1,4 +1,4 @@
-@import url("../../global.css");
+@import url("../../gobal.css");
 
 .main-content {
   flex: 1;
@@ -27,10 +27,12 @@
 
 .login-register {
   display: flex;
+  justify-content: right;
+  align-items: center;
   gap: 12px;
 }
 
-.login-btn{
+.login-btn {
   padding: 6px 14px;
   border-radius: 8px;
   background-color: var(--brand-accent-orange-deep);
@@ -46,6 +48,15 @@
   font: inherit;
   cursor: pointer;
   border: none;
+}
+
+.logout-btn {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid var(--brand-line);
+  background: #ffffff;
 }
 
 .search-input {
@@ -99,6 +110,35 @@
 .status-pill.active {
   background-color: rgba(47, 159, 154, 0.14);
   color: var(--brand-accent-teal-deep);
+}
+
+.auth-profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  background-color: var(--brand-gray-300);
+}
+
+.auth-profile > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+.notification-bell {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: var(--brand-gray-600);
+  cursor: pointer;
+}
+
+.notification-bell > i {
+  margin: 0;
+  padding: 0;
 }
 
 @media (max-width: 760px) {

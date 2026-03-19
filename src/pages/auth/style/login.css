@@ -222,6 +222,28 @@ input:focus {
   box-shadow: 0 15px 26px rgba(242, 106, 0, 0.35);
 }
 
+.btn-primary:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.form-message {
+  margin: 6px 0 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  min-height: 22px;
+}
+
+.form-message.error {
+  color: #c0392b;
+}
+
+.form-message.success {
+  color: #1f8b5a;
+}
+
 .switch-text {
   margin: 18px 0 0;
   text-align: center;

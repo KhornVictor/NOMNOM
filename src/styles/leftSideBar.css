@@ -21,10 +21,22 @@
 }
 
 .menu-item {
-  padding: 8px;
+  padding: 16px;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
   cursor: pointer;
   transition: background-color 0.2s ease;
+}
+
+.menu-item i {
+  font-size: 1.125rem;
+}
+
+.menu-item p {
+  margin: 0;
+  font-size: 1rem;
 }
 
 .menu-item:hover {

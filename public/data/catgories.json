@@ -1,0 +1,12 @@
+[
+  { "category_id": 1, "name": "Khmer Food" },
+  { "category_id": 2, "name": "Drinks" },
+  { "category_id": 3, "name": "Fast Food" },
+  { "category_id": 4, "name": "Seafood" },
+  { "category_id": 5, "name": "Desserts" },
+  { "category_id": 6, "name": "Vegetarian" },
+  { "category_id": 7, "name": "BBQ & Grill" },
+  { "category_id": 8, "name": "Noodles & Rice" },
+  { "category_id": 9, "name": "Soups" },
+  { "category_id": 10, "name": "Snacks" }
+]

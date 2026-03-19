@@ -1,9 +1,12 @@
-import { rendering, initSidebarNavigation } from "./src/function/Rendering.js";
+import { rendering } from "./src/function/Rendering.js";
+import { initSidebarNavigation } from "./src/function/SideBar.js";
+import { checkLoginState } from "./src/function/Navigation.js";
 
 const main = document.getElementById("main");
 
 const initApp = async () => {
   await rendering("./src/app.html", main);
+  checkLoginState();
   initSidebarNavigation(main);
 };
 

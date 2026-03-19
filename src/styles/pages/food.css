@@ -7,8 +7,182 @@
   height: 100%;
   min-height: 0;
   display: grid;
-  grid-template-rows: auto auto 1fr;
+  grid-template-rows: auto auto auto auto 1fr;
   gap: 16px;
+}
+
+/* Search and Filter Section */
+.search-filter-section {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 14px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border: 1px solid var(--brand-surface);
+}
+
+.search-box {
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--brand-surface);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--brand-accent-orange);
+  box-shadow: 0 0 0 3px rgba(242, 106, 0, 0.1);
+}
+
+.filters-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--brand-gray-700);
+}
+
+/* Category Filter */
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.category-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  padding: 6px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  background-color: white;
+  transition: all 0.3s ease;
+  font-size: 0.85rem;
+}
+
+.category-checkbox:hover {
+  border-color: var(--brand-accent-orange);
+  background-color: #fff8f0;
+}
+
+.category-checkbox input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: var(--brand-accent-orange);
+}
+
+.category-checkbox input[type="checkbox"]:checked + span {
+  font-weight: 600;
+  color: var(--brand-accent-orange);
+}
+
+/* Rating Filter */
+.rating-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rating-slider {
+  width: 100%;
+  height: 6px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: linear-gradient(
+    to right,
+    var(--brand-surface),
+    var(--brand-accent-orange)
+  );
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
+
+.rating-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: var(--brand-accent-orange);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(242, 106, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.rating-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 12px rgba(242, 106, 0, 0.4);
+}
+
+.rating-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: var(--brand-accent-orange);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(242, 106, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.rating-slider::-moz-range-thumb:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 12px rgba(242, 106, 0, 0.4);
+}
+
+.rating-display {
+  font-size: 0.85rem;
+  color: var(--brand-gray-600);
+}
+
+.rating-display strong {
+  color: var(--brand-accent-orange);
+  font-weight: 600;
+}
+
+/* Reset Button */
+.reset-btn {
+  padding: 8px 14px;
+  background-color: #f5f5f5;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.reset-btn:hover {
+  background-color: #efefef;
+  border-color: var(--brand-accent-orange);
+  color: var(--brand-accent-orange);
+}
+
+.reset-btn:active {
+  transform: scale(0.98);
 }
 
 .food-grid {
@@ -76,6 +250,7 @@
 
 .food-card:hover {
   transform: scale(1.03);
+  box-shadow: 0px 6px 16px rgba(99, 60, 2, 0.12);
 }
 
 .food-image {
@@ -88,18 +263,55 @@
 
 .food-name {
   margin: 0;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #1a1a1a;
+}
+
+.food-restaurant {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--brand-gray-500);
   font-weight: 500;
+}
+
+.food-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.stars {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ff9800;
+}
+
+.food-description {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--brand-gray-600);
+  line-height: 1.4;
 }
 
 .food-meta {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 8px;
 }
 
 .food-price {
   font-size: 0.875rem;
   color: var(--brand-gray-500);
+  font-weight: 600;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 4px;
+  font-weight: 400;
 }
 
 .add-btn {
@@ -111,19 +323,27 @@
     var(--brand-accent-orange-deep) 100%
   );
   color: #ffffff;
-  padding: 4px 10px;
+  padding: 6px 12px;
   font: inherit;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-weight: 600;
+  flex-shrink: 0;
 }
 
-.add-btn:hover {
+.add-btn:hover:not(:disabled) {
   box-shadow: 0px 6px 16px rgba(242, 106, 0, 0.3);
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
-.add-btn:active {
+.add-btn:active:not(:disabled) {
   transform: scale(0.95);
+}
+
+.add-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
 }
 
 @keyframes gridFadeIn {
@@ -160,5 +380,40 @@
 @media (max-width: 1200px) {
   .food-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .search-filter-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .search-box {
+    flex: 1;
+    min-width: 250px;
+  }
+
+  .filters-wrapper {
+    flex: 1;
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .food-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .search-filter-section {
+    flex-direction: column;
+  }
+
+  .category-list {
+    flex-direction: column;
+  }
+
+  .category-checkbox {
+    width: 100%;
+    justify-content: space-between;
   }
 }
