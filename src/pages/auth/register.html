@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodITC | Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/register.css" />
+  </head>
+  <body>
+    <main class="auth-page">
+      <section class="hero-panel">
+        <a href="../../../index.html" class="back-link">&larr; Back to Home</a>
+        <h1 class="brand-title">NOM<br />NOM</h1>
+        <p class="hero-text">Join today and get your first delivery deal.</p>
+        <ul class="hero-tags">
+          <li>Personalized food picks</li>
+          <li>Easy reorders</li>
+          <li>Member-only offers</li>
+        </ul>
+      </section>
+
+      <section class="form-panel" aria-labelledby="register-heading">
+        <div class="auth-card">
+          <p class="pill">Create account</p>
+          <h2 id="register-heading">Let us set your food profile</h2>
+          <p class="subtext">
+            Sign up in under a minute and start ordering from your favorites.
+          </p>
+
+          <form action="#" method="post" class="auth-form">
+            <div class="grid-two">
+              <div class="input-group">
+                <label for="first-name">First name</label>
+                <input
+                  id="first-name"
+                  name="firstName"
+                  type="text"
+                  placeholder="First name"
+                  required
+                />
+              </div>
+
+              <div class="input-group">
+                <label for="last-name">Last name</label>
+                <input
+                  id="last-name"
+                  name="lastName"
+                  type="text"
+                  placeholder="Last name"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="register-email">Email</label>
+              <input
+                id="register-email"
+                name="email"
+                type="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="register-phone">Phone number</label>
+              <input
+                id="register-phone"
+                name="phone"
+                type="tel"
+                placeholder="+855 xx xxx xxx"
+                required
+              />
+            </div>
+
+            <div class="grid-two">
+              <div class="input-group">
+                <label for="register-password">Password</label>
+                <input
+                  id="register-password"
+                  name="password"
+                  type="password"
+                  placeholder="Create password"
+                  required
+                />
+              </div>
+
+              <div class="input-group">
+                <label for="confirm-password">Confirm password</label>
+                <input
+                  id="confirm-password"
+                  name="confirmPassword"
+                  type="password"
+                  placeholder="Confirm password"
+                  required
+                />
+              </div>
+            </div>
+
+            <label class="checkbox-wrap">
+              <input type="checkbox" name="terms" required />
+              <span>I agree to the terms and privacy policy</span>
+            </label>
+
+            <button type="submit" class="btn-primary">Create Account</button>
+          </form>
+
+          <p class="switch-text">
+            Already have an account?
+            <a href="./login.html" class="text-link">Sign in</a>
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+.right-sidebar {
+  width: 320px;
+  padding: 20px;
+  border-left: 1px solid var(--brand-line);
+  background-color: #fffdf9;
+  display: grid;
+  align-content: start;
+  gap: 16px;
+}
+
+.table-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.order-list {
+  font-size: 0.875rem;
+  color: var(--brand-gray-600);
+}
+
+.order-list p {
+  margin: 0 0 6px;
+}
+
+.bill-section {
+  border-top: 1px solid var(--brand-line);
+  padding-top: 12px;
+  display: grid;
+  gap: 6px;
+  font-size: 0.875rem;
+}
+
+.bill-row {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bill-row.total {
+  font-weight: 600;
+}
+
+.place-order-btn {
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  background: linear-gradient(
+    100deg,
+    var(--brand-accent-orange) 0%,
+    var(--brand-accent-orange-deep) 100%
+  );
+  color: #ffffff;
+  padding: 10px 14px;
+  font: inherit;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .right-sidebar {
+    width: 100%;
+    border-left: 0;
+    border-top: 1px solid var(--brand-line);
+  }
+}

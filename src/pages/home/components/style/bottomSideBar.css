@@ -1,0 +1,41 @@
+.bottom-sidebar {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .bottom-sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 68px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 6px;
+    padding: 10px 12px;
+    border-top: 1px solid var(--brand-line);
+    background: #ffffff;
+    box-shadow: 0 -8px 18px rgba(17, 24, 39, 0.08);
+    z-index: 40;
+  }
+
+  .bottom-item {
+    height: 44px;
+    border: 0;
+    border-radius: 10px;
+    background: transparent;
+    color: var(--brand-gray-600);
+    font:
+      600 0.85rem "Segoe UI",
+      Tahoma,
+      Geneva,
+      Verdana,
+      sans-serif;
+  }
+
+  .bottom-item.active {
+    color: var(--brand-accent-orange-deep);
+    background: var(--brand-accent-orange-soft);
+  }
+}

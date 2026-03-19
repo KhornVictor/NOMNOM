@@ -1,0 +1,25 @@
+:root {
+  --brand-bg-cream: #fff7ef;
+  --brand-bg-soft: #fff1df;
+  --brand-surface: #ffffff;
+
+  --brand-accent-orange: #ff8a00;
+  --brand-accent-orange-deep: #f26a00;
+  --brand-accent-orange-soft: #ffe2bf;
+
+  --brand-accent-teal: #2f9f9a;
+  --brand-accent-teal-soft: #cfeeed;
+  --brand-accent-teal-deep: #1e5f5d;
+
+  --brand-text-dark: #232323;
+  --brand-text-mid: #666666;
+  --brand-line: #e9e2d9;
+
+  --brand-gray-50: #f9fafb;
+  --brand-gray-100: #f3f4f6;
+  --brand-gray-200: #e5e7eb;
+  --brand-gray-300: #d1d5db;
+  --brand-gray-500: #6b7280;
+  --brand-gray-600: #4b5563;
+  --brand-gray-900: #111827;
+}

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodITC | Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/login.css" />
+  </head>
+  <body>
+    <main class="auth-page">
+      <section class="hero-panel">
+        <a href="../../../index.html" class="back-link">&larr; Back to Home</a>
+        <h1 class="brand-title">NOM<br />NOM</h1>
+        <p class="hero-text">Fresh bites. Fast delivery. Happy wallet.</p>
+        <ul class="hero-tags">
+          <li>Quick checkout</li>
+          <li>Smart promotions</li>
+          <li>Live order tracking</li>
+        </ul>
+      </section>
+
+      <section class="form-panel" aria-labelledby="login-heading">
+        <div class="auth-card">
+          <p class="pill">Welcome back</p>
+          <h2 id="login-heading">Sign in to your account</h2>
+          <p class="subtext">
+            Continue where you left off and place your next order in seconds.
+          </p>
+
+          <form action="#" method="post" onsubmit="window.location.href = '../../../index.html'; return false;" class="auth-form">
+            <div class="input-group">
+              <label for="login-email">Email</label>
+              <input
+                id="login-email"
+                name="email"
+                type="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <div class="label-row">
+                <label for="login-password">Password</label>
+                <a href="#" class="text-link">Forgot password?</a>
+              </div>
+              <input
+                id="login-password"
+                name="password"
+                type="password"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+
+            <div class="form-row">
+              <label class="checkbox-wrap">
+                <input type="checkbox" name="remember" />
+                <span>Remember me</span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn-primary">Log In</button>
+          </form>
+
+          <p class="switch-text">
+            New here?
+            <a href="./register.html" class="text-link">Create account</a>
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

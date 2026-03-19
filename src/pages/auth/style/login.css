@@ -1,0 +1,259 @@
+@import url("../../../styles/index.css");
+
+:root {
+  --bg-cream: var(--brand-bg-cream);
+  --bg-soft: var(--brand-bg-soft);
+  --card: var(--brand-surface);
+  --orange: var(--brand-accent-orange);
+  --orange-deep: var(--brand-accent-orange-deep);
+  --teal: var(--brand-accent-teal);
+  --text-dark: var(--brand-text-dark);
+  --text-mid: var(--brand-text-mid);
+  --line: var(--brand-line);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Nunito", sans-serif;
+  color: var(--text-dark);
+  background:
+    radial-gradient(circle at 8% 10%, #ffd8a8 0%, transparent 26%),
+    radial-gradient(circle at 95% 90%, #8fd8d3 0%, transparent 22%),
+    var(--bg-cream);
+}
+
+.auth-page {
+  width: min(1120px, 94vw);
+  margin: 24px auto;
+  min-height: calc(100vh - 48px);
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 22px 60px rgba(134, 77, 0, 0.15);
+  background: var(--card);
+}
+
+.hero-panel {
+  padding: 38px;
+  background: linear-gradient(150deg, #fff0d8 0%, #ffe7c3 45%, #ffd99f 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.back-link {
+  color: var(--orange-deep);
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.brand-title {
+  margin: 16px 0 10px;
+  font-family: "Baloo 2", cursive;
+  font-size: clamp(2.4rem, 8vw, 4.2rem);
+  line-height: 0.88;
+  color: var(--orange-deep);
+  text-shadow: 0 6px 0 rgba(255, 255, 255, 0.45);
+}
+
+.hero-text {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #3b3b3b;
+}
+
+.hero-tags {
+  margin: 26px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.hero-tags li {
+  width: fit-content;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(47, 159, 154, 0.14);
+  color: #1e5f5d;
+  font-weight: 700;
+}
+
+.form-panel {
+  padding: 34px;
+  background: linear-gradient(180deg, #fff9f2 0%, #fffdf9 100%);
+  display: grid;
+  place-items: center;
+}
+
+.auth-card {
+  width: min(520px, 100%);
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: var(--card);
+  box-shadow: 0 16px 34px rgba(98, 74, 37, 0.09);
+}
+
+.pill {
+  margin: 0;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--teal);
+}
+
+.auth-card h2 {
+  margin: 8px 0 8px;
+  font-family: "Baloo 2", cursive;
+  font-size: 2rem;
+  line-height: 1.05;
+}
+
+.subtext {
+  margin: 0 0 20px;
+  color: var(--text-mid);
+}
+
+.auth-form {
+  display: grid;
+  gap: 15px;
+}
+
+.input-group {
+  display: grid;
+  gap: 7px;
+}
+
+label {
+  font-weight: 700;
+  font-size: 0.96rem;
+}
+
+input {
+  height: 46px;
+  border-radius: 12px;
+  border: 1px solid #d8d0c4;
+  padding: 0 14px;
+  font: inherit;
+  background: #fffdfa;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--teal);
+  box-shadow: 0 0 0 4px rgba(47, 159, 154, 0.14);
+}
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.text-link {
+  color: var(--teal);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkbox-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-mid);
+  font-weight: 600;
+}
+
+.checkbox-wrap input {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+}
+
+.btn-primary {
+  margin-top: 4px;
+  height: 50px;
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(
+    100deg,
+    var(--orange) 0%,
+    var(--orange-deep) 100%
+  );
+  color: #ffffff;
+  font:
+    800 1.05rem "Nunito",
+    sans-serif;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  box-shadow: 0 12px 20px rgba(242, 106, 0, 0.3);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 26px rgba(242, 106, 0, 0.35);
+}
+
+.switch-text {
+  margin: 18px 0 0;
+  text-align: center;
+  color: var(--text-mid);
+}
+
+@media (max-width: 900px) {
+  .auth-page {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-panel {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  .auth-page {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    min-height: 100vh;
+  }
+
+  .hero-panel,
+  .form-panel {
+    padding: 22px;
+  }
+
+  .auth-card {
+    padding: 22px;
+  }
+
+  .auth-card h2 {
+    font-size: 1.7rem;
+  }
+}
