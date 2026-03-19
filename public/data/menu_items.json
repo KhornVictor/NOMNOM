@@ -1,0 +1,92 @@
+[
+  {
+    "item_id": 1,
+    "restaurant_id": 1,
+    "name": "Grilled Chicken Plate",
+    "description": "Juicy grilled chicken served with steamed vegetables and mashed potatoes.",
+    "price": 14.99,
+    "image_url": "https://example.com/images/grilled-chicken.jpg",
+    "is_available": true
+  },
+  {
+    "item_id": 2,
+    "restaurant_id": 1,
+    "name": "BBQ Beef Ribs",
+    "description": "Slow-cooked beef ribs glazed with smoky barbecue sauce.",
+    "price": 19.50,
+    "image_url": "https://example.com/images/bbq-ribs.jpg",
+    "is_available": true
+  },
+  {
+    "item_id": 3,
+    "restaurant_id": 2,
+    "name": "Margherita Pizza",
+    "description": "Classic pizza with fresh mozzarella, tomato sauce, and basil.",
+    "price": 12.00,
+    "image_url": "https://example.com/images/margherita-pizza.jpg",
+    "is_available": true
+  },
+  {
+    "item_id": 4,
+    "restaurant_id": 2,
+    "name": "Fettuccine Alfredo",
+    "description": "Creamy Alfredo sauce tossed with fettuccine pasta and parmesan.",
+    "price": 13.75,
+    "image_url": "https://example.com/images/fettuccine-alfredo.jpg",
+    "is_available": true
+  },
+  {
+    "item_id": 5,
+    "restaurant_id": 3,
+    "name": "Salmon Sushi Roll",
+    "description": "Fresh salmon roll with avocado and cucumber.",
+    "price": 9.99,
+    "image_url": "https://example.com/images/salmon-sushi.jpg",
+    "is_available": true
+  },
+  {
+    "item_id": 6,
+    "restaurant_id": 3,
+    "name": "Spicy Ramen",
+    "description": "Rich pork broth ramen with chili oil and soft-boiled egg.",
+    "price": 11.50,
+    "image_url": "https://example.com/images/spicy-ramen.jpg",
+    "is_available": false
+  },
+  {
+    "item_id": 7,
+    "restaurant_id": 4,
+    "name": "Butter Chicken",
+    "description": "Tender chicken in creamy tomato-based curry sauce.",
+    "price": 15.25,
+    "image_url": "https://example.com/images/butter-chicken.jpg",
+    "is_available": true
+  },
+  {
+    "item_id": 8,
+    "restaurant_id": 4,
+    "name": "Garlic Naan",
+    "description": "Traditional Indian flatbread topped with garlic and butter.",
+    "price": 3.50,
+    "image_url": "https://example.com/images/garlic-naan.jpg",
+    "is_available": true
+  },
+  {
+    "item_id": 9,
+    "restaurant_id": 5,
+    "name": "Beef Tacos",
+    "description": "Three soft tacos filled with seasoned beef and fresh salsa.",
+    "price": 10.75,
+    "image_url": "https://example.com/images/beef-tacos.jpg",
+    "is_available": true
+  },
+  {
+    "item_id": 10,
+    "restaurant_id": 5,
+    "name": "Chicken Quesadilla",
+    "description": "Grilled tortilla stuffed with chicken and melted cheese.",
+    "price": 11.25,
+    "image_url": "https://example.com/images/chicken-quesadilla.jpg",
+    "is_available": true
+  }
+]

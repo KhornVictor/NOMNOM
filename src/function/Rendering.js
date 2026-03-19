@@ -1,36 +1,127 @@
-const mountComponents = async (
-  root = document,
+/**
+ * Recursively loads and mounts components with data-component attributes.
+ * Handles nested components and relative path resolution.
+ * @param {string} filepath - Path to the component file to load
+ * @param {HTMLElement} container - DOM element to inject component into
+ * @param {string} baseUrl - Base URL for resolving relative paths (defaults to current location)
+ * @returns {Promise<void>}
+ */
+
+export const rendering = async (
+  filepath,
+  container,
   baseUrl = window.location.href,
 ) => {
-  const mounts = root.querySelectorAll("[data-component]");
+  try {
+    const componentUrl = new URL(filepath, baseUrl);
+    const response = await fetch(componentUrl.href);
 
-  await Promise.all(
-    Array.from(mounts).map(async (mount) => {
-      const filePath = mount.getAttribute("data-component");
+    if (!response.ok) {
+      throw new Error(
+        `Failed to load ${componentUrl.href}: ${response.statusText}`,
+      );
+    }
 
-      if (!filePath) {
-        return;
-      }
+    const html = await response.text();
+    container.innerHTML = html;
 
-      const componentUrl = new URL(filePath, baseUrl);
+    const nestedComponents = container.querySelectorAll("[data-component]");
 
-      try {
-        const response = await fetch(componentUrl.href);
-
-        if (!response.ok) {
-          throw new Error(`Failed to load ${componentUrl.href}`);
+    await Promise.all(
+      Array.from(nestedComponents).map(async (el) => {
+        const nestedPath = el.getAttribute("data-component");
+        if (nestedPath && el !== container) {
+          await rendering(nestedPath, el, componentUrl.href);
         }
-
-        mount.innerHTML = await response.text();
-
-        await mountComponents(mount, componentUrl.href);
-      } catch (error) {
-        mount.innerHTML =
-          '<p class="component-error">Component failed to load.</p>';
-        console.error(error);
-      }
-    }),
-  );
+      }),
+    );
+  } catch (error) {
+    container.innerHTML =
+      '<p class="component-error">Component failed to load.</p>';
+    console.error(`Rendering error: ${error.message}`);
+  }
 };
 
-mountComponents();
+/**
+ * Initialize sidebar navigation with click handlers.
+ * Manages active states and hash-based routing.
+ * @param {HTMLElement} root - Root element to search for sidebar (defaults to document)
+ */
+export const initSidebarNavigation = (root = document) => {
+  const menuItems = root.querySelectorAll(
+    ".left-sidebar .menu-item[data-route]",
+  );
+  const contentArea = root.querySelector("#content-area");
+  const routeMap = {
+    home: "./src/pages/home/home.html",
+    food: "./src/pages/home/food.html",
+    history: "./src/pages/home/history.html",
+    settings: "./src/pages/home/setting.html",
+  };
+
+  if (menuItems.length === 0) {
+    console.warn("No sidebar menu items found with data-route attribute");
+    return;
+  }
+
+  if (!contentArea) {
+    console.warn("No #content-area found for sidebar route rendering");
+    return;
+  }
+
+  const setActiveByRoute = (route) => {
+    menuItems.forEach((button) => {
+      button.classList.toggle("active", button.dataset.route === route);
+    });
+  };
+
+  const renderRoute = async (route) => {
+    const pagePath = routeMap[route];
+
+    if (!pagePath) {
+      contentArea.innerHTML =
+        '<p class="component-error">This page is not available yet.</p>';
+      setActiveByRoute(route);
+      return;
+    }
+
+    await rendering(pagePath, contentArea);
+    setActiveByRoute(route);
+  };
+
+  menuItems.forEach((item) => {
+    // Prevent duplicate event listeners
+    if (item.dataset.bound === "true") {
+      return;
+    }
+
+    item.dataset.bound = "true";
+
+    item.addEventListener("click", () => {
+      const route = item.dataset.route;
+
+      if (route) {
+        void renderRoute(route);
+        window.location.hash = route;
+      }
+    });
+  });
+
+  if (root.dataset.hashListenerBound !== "true") {
+    root.dataset.hashListenerBound = "true";
+
+    window.addEventListener("hashchange", () => {
+      const route = window.location.hash.replace(/^#/, "");
+      if (route) {
+        void renderRoute(route);
+      }
+    });
+  }
+
+  const initialRoute =
+    window.location.hash.replace(/^#/, "") ||
+    root.querySelector(".left-sidebar .menu-item.active")?.dataset.route ||
+    "home";
+
+  void renderRoute(initialRoute);
+};

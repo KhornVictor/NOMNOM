@@ -1,6 +1,9 @@
 .left-sidebar {
   width: 256px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border-right: 1px solid var(--brand-line);
   background-color: #fffaf3;
 }
@@ -29,8 +32,8 @@
 }
 
 .menu-item.active {
-  background-color: var(--brand-accent-orange-soft);
-  color: var(--brand-accent-orange-deep);
+  background-color: var(--brand-accent-orange-deep);
+  color: var(--brand-surface);
   font-weight: 600;
 }
 

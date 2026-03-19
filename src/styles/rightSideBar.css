@@ -1,17 +1,17 @@
 .right-sidebar {
   width: 320px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border-left: 1px solid var(--brand-line);
   background-color: #fffdf9;
-  display: grid;
-  align-content: start;
-  gap: 16px;
 }
 
 .table-title {
-  margin: 0;
-  font-size: 1rem;
+  font-size: 24px;
   font-weight: 600;
+  margin-top: 0; 
 }
 
 .order-list {
@@ -45,6 +45,7 @@
   width: 100%;
   border: 0;
   border-radius: 10px;
+  margin-top: 12px;
   background: linear-gradient(
     100deg,
     var(--brand-accent-orange) 0%,

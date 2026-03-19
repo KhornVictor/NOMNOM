@@ -1,0 +1,92 @@
+[
+  {
+    "restaurant_id": 1,
+    "name": "Sunset Grill",
+    "description": "Cozy family restaurant serving grilled specialties and homemade desserts.",
+    "address": "12 Ocean View Road, Miami, FL",
+    "phone": "+1-305-555-0101",
+    "image_url": "https://example.com/images/sunset-grill.jpg",
+    "created_at": "2026-03-01T09:00:00"
+  },
+  {
+    "restaurant_id": 2,
+    "name": "Bella Italia",
+    "description": "Authentic Italian cuisine featuring fresh pasta and wood-fired pizzas.",
+    "address": "45 Roma Street, New York, NY",
+    "phone": "+1-212-555-0102",
+    "image_url": "https://example.com/images/bella-italia.jpg",
+    "created_at": "2026-03-02T10:15:00"
+  },
+  {
+    "restaurant_id": 3,
+    "name": "Sakura Sushi",
+    "description": "Traditional Japanese sushi bar with premium sashimi and ramen.",
+    "address": "78 Cherry Blossom Ave, San Francisco, CA",
+    "phone": "+1-415-555-0103",
+    "image_url": "https://example.com/images/sakura-sushi.jpg",
+    "created_at": "2026-03-03T11:30:00"
+  },
+  {
+    "restaurant_id": 4,
+    "name": "Spice Route",
+    "description": "Indian fusion restaurant offering rich curries and tandoori dishes.",
+    "address": "23 Curry Lane, Chicago, IL",
+    "phone": "+1-312-555-0104",
+    "image_url": "https://example.com/images/spice-route.jpg",
+    "created_at": "2026-03-04T12:45:00"
+  },
+  {
+    "restaurant_id": 5,
+    "name": "El Rancho",
+    "description": "Mexican restaurant known for tacos, burritos, and margaritas.",
+    "address": "90 Fiesta Street, Austin, TX",
+    "phone": "+1-512-555-0105",
+    "image_url": "https://example.com/images/el-rancho.jpg",
+    "created_at": "2026-03-05T14:00:00"
+  },
+  {
+    "restaurant_id": 6,
+    "name": "Green Garden",
+    "description": "Vegan and vegetarian dishes made with locally sourced ingredients.",
+    "address": "34 Fresh Ave, Portland, OR",
+    "phone": "+1-503-555-0106",
+    "image_url": "https://example.com/images/green-garden.jpg",
+    "created_at": "2026-03-06T15:20:00"
+  },
+  {
+    "restaurant_id": 7,
+    "name": "Ocean Breeze",
+    "description": "Seafood restaurant offering fresh catch and waterfront dining.",
+    "address": "56 Harbor Road, Seattle, WA",
+    "phone": "+1-206-555-0107",
+    "image_url": "https://example.com/images/ocean-breeze.jpg",
+    "created_at": "2026-03-07T16:35:00"
+  },
+  {
+    "restaurant_id": 8,
+    "name": "Burger Hub",
+    "description": "Modern fast-casual spot serving gourmet burgers and fries.",
+    "address": "101 Main Street, Denver, CO",
+    "phone": "+1-303-555-0108",
+    "image_url": "https://example.com/images/burger-hub.jpg",
+    "created_at": "2026-03-08T17:50:00"
+  },
+  {
+    "restaurant_id": 9,
+    "name": "Le Petit Café",
+    "description": "French café with artisan pastries, coffee, and brunch specials.",
+    "address": "67 Paris Blvd, Boston, MA",
+    "phone": "+1-617-555-0109",
+    "image_url": "https://example.com/images/le-petit-cafe.jpg",
+    "created_at": "2026-03-09T18:10:00"
+  },
+  {
+    "restaurant_id": 10,
+    "name": "Dragon Wok",
+    "description": "Chinese restaurant specializing in stir-fry and dim sum.",
+    "address": "88 Lotus Street, Las Vegas, NV",
+    "phone": "+1-702-555-0110",
+    "image_url": "https://example.com/images/dragon-wok.jpg",
+    "created_at": "2026-03-10T19:25:00"
+  }
+]

@@ -1,4 +1,4 @@
-@import url("../../../styles/index.css");
+@import url("../../../../gobal.css");
 
 :root {
   --bg-cream: var(--brand-bg-cream);
@@ -21,6 +21,9 @@ body {
   min-height: 100vh;
   font-family: "Nunito", sans-serif;
   color: var(--text-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background:
     radial-gradient(circle at 2% 95%, #ffd2a1 0%, transparent 28%),
     radial-gradient(circle at 97% 8%, #92deda 0%, transparent 24%),
@@ -28,9 +31,7 @@ body {
 }
 
 .auth-page {
-  width: min(1180px, 94vw);
-  margin: 24px auto;
-  min-height: calc(100vh - 48px);
+  width: min(1000px);
   display: grid;
   grid-template-columns: 0.95fr 1.2fr;  
   border-radius: 28px;

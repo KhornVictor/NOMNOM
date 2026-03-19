@@ -1,0 +1,72 @@
+[
+  {
+    "payment_id": 1,
+    "order_id": 1,
+    "method": "card",
+    "status": "paid",
+    "paid_at": "2026-03-10T16:15:00"
+  },
+  {
+    "payment_id": 2,
+    "order_id": 2,
+    "method": "cash",
+    "status": "pending",
+    "paid_at": null
+  },
+  {
+    "payment_id": 3,
+    "order_id": 3,
+    "method": "aba",
+    "status": "paid",
+    "paid_at": "2026-03-10T16:45:00"
+  },
+  {
+    "payment_id": 4,
+    "order_id": 4,
+    "method": "card",
+    "status": "failed",
+    "paid_at": null
+  },
+  {
+    "payment_id": 5,
+    "order_id": 5,
+    "method": "wing",
+    "status": "paid",
+    "paid_at": "2026-03-10T17:25:00"
+  },
+  {
+    "payment_id": 6,
+    "order_id": 6,
+    "method": "card",
+    "status": "paid",
+    "paid_at": "2026-03-10T17:40:00"
+  },
+  {
+    "payment_id": 7,
+    "order_id": 7,
+    "method": "cash",
+    "status": "pending",
+    "paid_at": null
+  },
+  {
+    "payment_id": 8,
+    "order_id": 8,
+    "method": "aba",
+    "status": "paid",
+    "paid_at": "2026-03-10T18:25:00"
+  },
+  {
+    "payment_id": 9,
+    "order_id": 9,
+    "method": "card",
+    "status": "paid",
+    "paid_at": "2026-03-10T18:50:00"
+  },
+  {
+    "payment_id": 10,
+    "order_id": 10,
+    "method": "wing",
+    "status": "paid",
+    "paid_at": "2026-03-10T19:10:00"
+  }
+]

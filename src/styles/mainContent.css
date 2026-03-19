@@ -1,3 +1,5 @@
+@import url(../../../../styles/index.css);
+
 .main-content {
   flex: 1;
   min-width: 0;
@@ -12,6 +14,29 @@
   justify-content: space-between;
   align-items: center;
   gap: 18px;
+}
+
+.login-register {
+  display: flex;
+  gap: 12px;
+}
+
+.login-btn{
+  padding: 6px 14px;
+  border-radius: 8px;
+  background-color: var(--brand-accent-orange-deep);
+  color: var(--brand-surface);
+  font: inherit;
+  cursor: pointer;
+}
+
+.login-btn,
+.register-btn {
+  padding: 6px 14px;
+  border-radius: 8px;
+  font: inherit;
+  cursor: pointer;
+  border: none;
 }
 
 .search-input {
@@ -65,68 +90,6 @@
 .status-pill.active {
   background-color: rgba(47, 159, 154, 0.14);
   color: var(--brand-accent-teal-deep);
-}
-
-.section-title {
-  margin: 0;
-  font-size: 1.125rem;
-  font-weight: 600;
-}
-
-.food-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.food-card {
-  padding: 12px;
-  border: 1px solid var(--brand-line);
-  border-radius: 14px;
-  display: grid;
-  gap: 10px;
-}
-
-.food-image {
-  height: 96px;
-  border-radius: 10px;
-  background-color: var(--brand-gray-200);
-}
-
-.food-name {
-  margin: 0;
-  font-weight: 500;
-}
-
-.food-meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.food-price {
-  font-size: 0.875rem;
-  color: var(--brand-gray-500);
-}
-
-.add-btn {
-  border: 0;
-  border-radius: 8px;
-  background: linear-gradient(
-    100deg,
-    var(--brand-accent-orange) 0%,
-    var(--brand-accent-orange-deep) 100%
-  );
-  color: #ffffff;
-  padding: 4px 10px;
-  font: inherit;
-  cursor: pointer;
-}
-
-@media (max-width: 1200px) {
-  .food-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 }
 
 @media (max-width: 760px) {
