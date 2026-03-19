@@ -1,12 +1,21 @@
-@import url(../../../../styles/index.css);
+@import url("../../global.css");
 
 .main-content {
   flex: 1;
   min-width: 0;
+  min-height: 0;
+  height: 100%;
   padding: 24px;
+  background-color: var(--brand-gray-100);
   display: grid;
   align-content: start;
   gap: 24px;
+  overflow: hidden;
+}
+
+.content-area {
+  min-height: 0;
+  overflow: hidden;
 }
 
 .top-bar {

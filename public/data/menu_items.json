@@ -5,7 +5,7 @@
     "name": "Grilled Chicken Plate",
     "description": "Juicy grilled chicken served with steamed vegetables and mashed potatoes.",
     "price": 14.99,
-    "image_url": "https://example.com/images/grilled-chicken.jpg",
+    "image_url": "https://media.istockphoto.com/id/928823336/photo/grilled-chicken-breast-fried-chicken-fillet-and-fresh-vegetable-salad-of-tomatoes-cucumbers.jpg?s=612x612&w=0&k=20&c=x6KbcglhT_oxKEzCoSM5E8abP3rlEZAt7jQhlAPZtoY=",
     "is_available": true
   },
   {
@@ -13,8 +13,8 @@
     "restaurant_id": 1,
     "name": "BBQ Beef Ribs",
     "description": "Slow-cooked beef ribs glazed with smoky barbecue sauce.",
-    "price": 19.50,
-    "image_url": "https://example.com/images/bbq-ribs.jpg",
+    "price": 19.5,
+    "image_url": "https://www.tasteofhome.com/wp-content/uploads/2017/09/exps39535_CW163683D03_31_2b-.jpg",
     "is_available": true
   },
   {
@@ -22,8 +22,8 @@
     "restaurant_id": 2,
     "name": "Margherita Pizza",
     "description": "Classic pizza with fresh mozzarella, tomato sauce, and basil.",
-    "price": 12.00,
-    "image_url": "https://example.com/images/margherita-pizza.jpg",
+    "price": 12.0,
+    "image_url": "https://uk.ooni.com/cdn/shop/articles/20220211142645-margherita-9920_e41233d5-dcec-461c-b07e-03245f031dfe.jpg?crop=center&height=800&v=1737105431&width=800",
     "is_available": true
   },
   {
@@ -32,7 +32,7 @@
     "name": "Fettuccine Alfredo",
     "description": "Creamy Alfredo sauce tossed with fettuccine pasta and parmesan.",
     "price": 13.75,
-    "image_url": "https://example.com/images/fettuccine-alfredo.jpg",
+    "image_url": "https://www.modernhoney.com/wp-content/uploads/2018/08/Fettuccine-Alfredo-Recipe-1.jpg",
     "is_available": true
   },
   {
@@ -41,7 +41,7 @@
     "name": "Salmon Sushi Roll",
     "description": "Fresh salmon roll with avocado and cucumber.",
     "price": 9.99,
-    "image_url": "https://example.com/images/salmon-sushi.jpg",
+    "image_url": "https://timskitchen.com.hk/wp-content/uploads/2025/02/smoked-salmon-sushi-roll-recipe-1739410610.jpg",
     "is_available": true
   },
   {
@@ -49,8 +49,8 @@
     "restaurant_id": 3,
     "name": "Spicy Ramen",
     "description": "Rich pork broth ramen with chili oil and soft-boiled egg.",
-    "price": 11.50,
-    "image_url": "https://example.com/images/spicy-ramen.jpg",
+    "price": 11.5,
+    "image_url": "https://www.spoonforkbacon.com/wp-content/uploads/2024/04/spicy-ramen-noodles-recipe-card.jpg",
     "is_available": false
   },
   {
@@ -59,7 +59,7 @@
     "name": "Butter Chicken",
     "description": "Tender chicken in creamy tomato-based curry sauce.",
     "price": 15.25,
-    "image_url": "https://example.com/images/butter-chicken.jpg",
+    "image_url": "https://majasrecipes.com/wp-content/uploads/2024/12/butter-chicken-recipe-5.jpg",
     "is_available": true
   },
   {
@@ -67,8 +67,8 @@
     "restaurant_id": 4,
     "name": "Garlic Naan",
     "description": "Traditional Indian flatbread topped with garlic and butter.",
-    "price": 3.50,
-    "image_url": "https://example.com/images/garlic-naan.jpg",
+    "price": 3.5,
+    "image_url": "https://hostthetoast.com/wp-content/uploads/2018/08/Homemade-Garlic-Naan-3.jpg",
     "is_available": true
   },
   {
@@ -77,7 +77,7 @@
     "name": "Beef Tacos",
     "description": "Three soft tacos filled with seasoned beef and fresh salsa.",
     "price": 10.75,
-    "image_url": "https://example.com/images/beef-tacos.jpg",
+    "image_url": "https://www.onceuponachef.com/images/2023/08/Beef-Tacos.jpg",
     "is_available": true
   },
   {
@@ -86,7 +86,187 @@
     "name": "Chicken Quesadilla",
     "description": "Grilled tortilla stuffed with chicken and melted cheese.",
     "price": 11.25,
-    "image_url": "https://example.com/images/chicken-quesadilla.jpg",
+    "image_url": "https://www.julieseatsandtreats.com/wp-content/uploads/2024/10/Chicken-Quesadilla-Square.jpg",
+    "is_available": true
+  },
+  {
+    "item_id": 11,
+    "restaurant_id": 1,
+    "name": "Fish Amok",
+    "description": "Traditional Cambodian curry made with fish, coconut milk, and kroeung spices.",
+    "price": 8.5,
+    "image_url": "https://grantourismotravels.com/wp-content/uploads/2017/05/Authentic-Fish-Amok-Recipe-Steamed-Fish-Curry-Cambodia-Copyright-2022-Terence-Carter-Grantourismo-T.jpg",
+    "is_available": true
+  },
+  {
+    "item_id": 12,
+    "restaurant_id": 1,
+    "name": "Beef Lok Lak",
+    "description": "Stir-fried beef with soy sauce and lime served with rice and fresh vegetables.",
+    "price": 9.0,
+    "image_url": "https://www.simplyrecipes.com/thmb/zb1rbkgxDQT3SfEPZiKncciphp8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Lok-Lak-Mustard-LEAD-05-a0d8c2c5cd064e9c8c31af93a81b51f0.jpg",
+    "is_available": true
+  },
+  {
+    "item_id": 13,
+    "restaurant_id": 2,
+    "name": "Khmer Red Curry",
+    "description": "Mild coconut-based curry with chicken, potatoes, and carrots.",
+    "price": 8.25,
+    "image_url": "https://xa6zemg4r8.cloudimg.io/_images_/g/62180f05ef54ddc19095525f.jpg",
+    "is_available": true
+  },
+  {
+    "item_id": 14,
+    "restaurant_id": 2,
+    "name": "Nom Banh Chok",
+    "description": "Traditional Cambodian breakfast noodle dish with fish gravy and fresh herbs.",
+    "price": 6.5,
+    "image_url": "https://grantourismotravels.com/wp-content/uploads/2020/02/Nom-Banh-Chok-Cambodian-Fermented-Rice-Noodles-Copyright-2022-Terence-Carter-Grantourismo-F.jpg",
+    "is_available": true
+  },
+  {
+    "item_id": 15,
+    "restaurant_id": 3,
+    "name": "Grilled Lemongrass Chicken",
+    "description": "Tender chicken marinated in lemongrass and spices, grilled to perfection.",
+    "price": 7.5,
+    "image_url": "https://hot-thai-kitchen.com/wp-content/uploads/2022/01/lemongrass-chicken-blog.jpg",
+    "is_available": true
+  },
+  {
+    "item_id": 16,
+    "restaurant_id": 3,
+    "name": "Khmer Beef Skewers",
+    "description": "Spiced beef skewers served with dipping sauce and rice.",
+    "price": 8.0,
+    "image_url": "https://www.seriouseats.com/thmb/G5C2-Pr4m6ET_yEn7GumPe6H0WA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2015__06__20150530-shao-z-beef-skewers-4-be3e8f2aa59d40a9ab4f4c8b6e110bfb.jpg",
+    "is_available": true
+  },
+  {
+    "item_id": 17,
+    "restaurant_id": 4,
+    "name": "Stir-Fried Morning Glory",
+    "description": "Popular Cambodian vegetable dish stir-fried with garlic and soy sauce.",
+    "price": 5.5,
+    "image_url": "https://beyondsweetandsavory.com/wp-content/uploads/2023/08/Vietnamese-stir-fried-morning-glory-with-garlic-VyTran-4.jpg",
+    "is_available": true
+  },
+  {
+    "item_id": 18,
+    "restaurant_id": 4,
+    "name": "Grilled Fish with Tamarind Sauce",
+    "description": "Whole grilled fish topped with tangy tamarind sauce.",
+    "price": 12.0,
+    "image_url": "https://static01.nyt.com/images/2024/10/10/multimedia/ZS-Baked-Fish-iTamarind-Saucerex-vmzl/ZS-Baked-Fish-iTamarind-Saucerex-vmzl-threeByTwoMediumAt2X.jpg",
+    "is_available": true
+  },
+  {
+    "item_id": 19,
+    "restaurant_id": 5,
+    "name": "Khmer Chicken Soup (Samlor Machu)",
+    "description": "Sour and aromatic Cambodian soup with chicken, tamarind, and herbs.",
+    "price": 7.75,
+    "image_url": "https://angkorchef.com/wp-content/uploads/2019/12/Somlaw-Machu-Kroeung-on-Table.jpg",
+    "is_available": true
+  },
+  {
+    "item_id": 20,
+    "restaurant_id": 5,
+    "name": "Prahok Ktis",
+    "description": "Traditional Cambodian dip made with fermented fish, coconut milk, and spices.",
+    "price": 6.75,
+    "image_url": "https://angkorchef.com/wp-content/uploads/2020/04/IMG_8444-web.jpeg",
+    "is_available": true
+  },
+  {
+    "item_id": 21,
+    "restaurant_id": 1,
+    "name": "Iced Coffee",
+    "description": "Sweet Cambodian-style iced coffee with condensed milk.",
+    "price": 2.5,
+    "image_url": "https://www.eatingbirdfood.com/wp-content/uploads/2025/06/iced-coffee-hero-new.jpg",
+    "is_available": true
+  },
+  {
+    "item_id": 22,
+    "restaurant_id": 1,
+    "name": "Lemongrass Tea",
+    "description": "Refreshing herbal tea made from fresh lemongrass.",
+    "price": 2.0,
+    "image_url": "https://goodlfe.com/cdn/shop/articles/20241001192423-lfe-20recipe-20cover-20images-20-7.png?v=1729011813&width=800",
+    "is_available": true
+  },
+  {
+    "item_id": 23,
+    "restaurant_id": 2,
+    "name": "Sugarcane Juice",
+    "description": "Freshly pressed sugarcane juice served chilled.",
+    "price": 2.75,
+    "image_url": "https://freshggies.in/cdn/shop/files/Sugar_Cane_Juice_FRDJ010_d3dd62bb-be82-4106-abaa-b777dab4241c.jpg?v=1745379748",
+    "is_available": true
+  },
+  {
+    "item_id": 24,
+    "restaurant_id": 2,
+    "name": "Tamarind Juice",
+    "description": "Tangy and sweet tamarind juice, a popular Cambodian drink.",
+    "price": 2.5,
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjMkfuqeORtscJW_kaB7UfB2ftCeC_zG3vAw&s",
+    "is_available": true
+  },
+  {
+    "item_id": 25,
+    "restaurant_id": 3,
+    "name": "Coconut Water",
+    "description": "Fresh coconut water served directly from the coconut.",
+    "price": 3.0,
+    "image_url": "https://health.osu.edu/-/media/health/images/stories/2024/09/coconut-water-sm.jpg",
+    "is_available": true
+  },
+  {
+    "item_id": 26,
+    "restaurant_id": 3,
+    "name": "Pineapple Smoothie",
+    "description": "Creamy smoothie made with fresh pineapple and ice.",
+    "price": 3.5,
+    "image_url": "https://www.purelykaylie.com/wp-content/uploads/2021/07/pineapple-coconut-smoothie-1.jpg",
+    "is_available": true
+  },
+  {
+    "item_id": 27,
+    "restaurant_id": 4,
+    "name": "Mango Shake",
+    "description": "Refreshing shake made from ripe mangoes and ice.",
+    "price": 3.25,
+    "image_url": "https://tastyoven.com/wp-content/uploads/2022/06/mango-shake-image.jpeg",
+    "is_available": true
+  },
+  {
+    "item_id": 28,
+    "restaurant_id": 4,
+    "name": "Iced Lemongrass Coffee",
+    "description": "Fusion of iced coffee with subtle lemongrass flavor.",
+    "price": 2.75,
+    "image_url": "https://imbibemagazine.com/wp-content/uploads/2022/07/nam-coffee-cold-brew-lemongrass-orange-orange-county.jpg",
+    "is_available": true
+  },
+  {
+    "item_id": 29,
+    "restaurant_id": 5,
+    "name": "Passion Fruit Juice",
+    "description": "Freshly squeezed passion fruit juice served chilled.",
+    "price": 3.0,
+    "image_url": "https://www.savoringthegood.com/wp-content/uploads/2024/09/1200-x-1200-with-crops-copy-2-2-1.jpg",
+    "is_available": true
+  },
+  {
+    "item_id": 30,
+    "restaurant_id": 5,
+    "name": "Herbal Infusion",
+    "description": "A calming blend of local herbs served hot.",
+    "price": 2.5,
+    "image_url": "https://cdn.shopify.com/s/files/1/0334/3931/8155/files/1_18ec8b3c-8279-4fca-a981-446982949eab.jpg?v=1738752201",
     "is_available": true
   }
 ]

@@ -3,22 +3,85 @@
   font-weight: 600;
 }
 
+.food-content {
+  height: 100%;
+  min-height: 0;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: 16px;
+}
+
 .food-grid {
   display: grid;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
+  padding-right: 6px;
+  animation: gridFadeIn 0.35s ease-out;
 }
 
 .food-card {
   padding: 12px;
-  border: 1px solid var(--brand-line);
+  border: 1px solid var(--brand-surface);
+  background-color: #ffffff;
+  box-shadow: 0px 4px 12px rgba(99, 60, 2, 0.08);
   border-radius: 14px;
   display: grid;
   gap: 10px;
+  opacity: 0;
+  transform: translateY(12px) scale(0.98);
+  animation: cardSlideIn 0.45s ease forwards;
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.food-grid .food-card:nth-child(1) {
+  animation-delay: 0.03s;
+}
+
+.food-grid .food-card:nth-child(2) {
+  animation-delay: 0.06s;
+}
+
+.food-grid .food-card:nth-child(3) {
+  animation-delay: 0.09s;
+}
+
+.food-grid .food-card:nth-child(4) {
+  animation-delay: 0.12s;
+}
+
+.food-grid .food-card:nth-child(5) {
+  animation-delay: 0.15s;
+}
+
+.food-grid .food-card:nth-child(6) {
+  animation-delay: 0.18s;
+}
+
+.food-grid .food-card:nth-child(7) {
+  animation-delay: 0.21s;
+}
+
+.food-grid .food-card:nth-child(8) {
+  animation-delay: 0.24s;
+}
+
+.food-card.unavailable {
+  opacity: 0.6;
+}
+
+.food-card:hover {
+  transform: scale(1.03);
 }
 
 .food-image {
+  width: 100%;
   height: 175px;
+  object-fit: cover;
   border-radius: 10px;
   background-color: var(--brand-gray-200);
 }
@@ -51,6 +114,47 @@
   padding: 4px 10px;
   font: inherit;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+  box-shadow: 0px 6px 16px rgba(242, 106, 0, 0.3);
+  transform: scale(1.05);
+}
+
+.add-btn:active {
+  transform: scale(0.95);
+}
+
+@keyframes gridFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes cardSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .food-grid,
+  .food-card,
+  .add-btn {
+    animation: none;
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
 }
 
 @media (max-width: 1200px) {

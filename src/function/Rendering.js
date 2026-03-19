@@ -1,3 +1,5 @@
+import { initFoodPage } from "./foodCard.js";
+
 /**
  * Recursively loads and mounts components with data-component attributes.
  * Handles nested components and relative path resolution.
@@ -86,11 +88,15 @@ export const initSidebarNavigation = (root = document) => {
     }
 
     await rendering(pagePath, contentArea);
+
+    if (route === "food") {
+      await initFoodPage(contentArea);
+    }
+
     setActiveByRoute(route);
   };
 
   menuItems.forEach((item) => {
-    // Prevent duplicate event listeners
     if (item.dataset.bound === "true") {
       return;
     }
