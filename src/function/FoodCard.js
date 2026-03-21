@@ -118,3 +118,39 @@ export const initFoodPage = async (root = document) => {
     });
   });
 };
+
+export const get10FoodCards = async (root = document) => {
+  const foodGrid = root.querySelector("#food-container #food-grid");
+  if (!foodGrid) {
+    return;
+  }
+
+  const getOrderingCount = (item) => {
+    const value = item.ordering_count ?? item.ording_count ?? 0;
+    return Number.isFinite(Number(value)) ? Number(value) : 0;
+  };
+
+  try {
+    const response = await fetch("./public/data/menu_items.json");
+    if (!response.ok) {
+      throw new Error(`Failed to load menu items: ${response.statusText}`);
+    }
+    const items = await response.json();
+    const fragment = document.createDocumentFragment();
+
+    items
+      .slice()
+      .sort((a, b) => getOrderingCount(b) - getOrderingCount(a))
+      .slice(0, 12)
+      .forEach((item) => {
+        fragment.appendChild(createFoodCard(item));
+      });
+
+    foodGrid.innerHTML = "";
+    foodGrid.appendChild(fragment);
+  } catch (error) {
+    foodGrid.innerHTML =
+      '<p class="component-error">Unable to load menu items right now.</p>';
+    console.error(error);
+  }
+};

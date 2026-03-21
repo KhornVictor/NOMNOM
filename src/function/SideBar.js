@@ -1,5 +1,7 @@
 import { rendering } from "./Rendering.js";
-import { initFoodPage } from "./foodCard.js";
+import { initFoodPage, get10FoodCards } from "./foodCard.js";
+import { initResturantBox } from "./resturantBox.js";
+import { initCategoryCards } from "./categoryCard.js";
 /**
  * Initialize sidebar navigation with click handlers.
  * Manages active states and hash-based routing.
@@ -45,6 +47,12 @@ export const initSidebarNavigation = (root = document) => {
 
     await rendering(pagePath, contentArea);
 
+    if (route === "home") {
+      await initResturantBox(contentArea);
+      await initCategoryCards(contentArea);
+      await get10FoodCards(contentArea);
+    }
+
     if (route === "food") {
       await initFoodPage(contentArea);
     }
@@ -86,4 +94,13 @@ export const initSidebarNavigation = (root = document) => {
     "home";
 
   void renderRoute(initialRoute);
+};
+
+export const siderSelection = (path) => {
+  const menuItems = document.querySelectorAll(
+    ".left-sidebar .menu-item[data-route]",
+  );
+  menuItems.forEach((button) => {
+    button.classList.toggle("active", button.dataset.route === path);
+  });
 };

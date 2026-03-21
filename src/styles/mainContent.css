@@ -8,6 +8,7 @@
   padding: 24px;
   background-color: var(--brand-gray-100);
   display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
   align-content: start;
   gap: 24px;
   overflow: hidden;
@@ -15,7 +16,14 @@
 
 .content-area {
   min-height: 0;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.content-area::-webkit-scrollbar {
+  display: none;
 }
 
 .top-bar {

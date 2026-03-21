@@ -1,12 +1,52 @@
 [
-  { "category_id": 1, "name": "Khmer Food" },
-  { "category_id": 2, "name": "Drinks" },
-  { "category_id": 3, "name": "Fast Food" },
-  { "category_id": 4, "name": "Seafood" },
-  { "category_id": 5, "name": "Desserts" },
-  { "category_id": 6, "name": "Vegetarian" },
-  { "category_id": 7, "name": "BBQ & Grill" },
-  { "category_id": 8, "name": "Noodles & Rice" },
-  { "category_id": 9, "name": "Soups" },
-  { "category_id": 10, "name": "Snacks" }
+  { 
+    "category_id": 1, 
+    "name": "Khmer Food",
+    "image_url": "https://png.pngtree.com/png-clipart/20250308/original/pngtree-khmer-food-asia-salad-food-photo-png-image_20607267.png"
+  },
+  { 
+    "category_id": 2, 
+    "name": "Drinks",
+    "image_url": "https://png.pngtree.com/png-clipart/20250224/original/pngtree-a-vibrant--cold-drink-glasses-png-image_20509166.png"
+  },
+  { 
+    "category_id": 3, 
+    "name": "Fast Food",
+    "image_url": "https://png.pngtree.com/png-clipart/20240103/original/pngtree-group-of-fast-food-products-png-image_14008130.png"
+  },
+  { 
+    "category_id": 4, 
+    "name": "Seafood",
+    "image_url": "https://png.pngtree.com/png-vector/20241115/ourmid/pngtree-crab-and-seafood-dish-with-fresh-festive-presentation-png-image_14438903.png"
+  },
+  { 
+    "category_id": 5, 
+    "name": "Desserts",
+    "image_url": "https://png.pngtree.com/png-vector/20240327/ourmid/pngtree-bakery-desserts-pastry-cakes-and-sweets-png-image_12223048.png"
+  },
+  { 
+    "category_id": 6, 
+    "name": "Vegetarian",
+    "image_url": "https://png.pngtree.com/png-clipart/20230520/ourmid/pngtree-vegetables-png-image_7101291.png"
+  },
+  { 
+    "category_id": 7, 
+    "name": "BBQ & Grill",
+    "image_url": "https://png.pngtree.com/png-vector/20250321/ourmid/pngtree-grilled-chicken-bbq-on-round-charcoal-barbecue-grill-png-image_15804597.png" 
+  },
+  { 
+    "category_id": 8, 
+    "name": "Noodles & Rice",
+    "image_url": "https://png.pngtree.com/png-clipart/20240629/original/pngtree-rice-noodles-isolated-on-transparent-background-png-image_15445423.png"
+  },
+  { 
+    "category_id": 9, 
+    "name": "Soups",
+    "image_url": "https://png.pngtree.com/png-vector/20240721/ourmid/pngtree-steaming-hot-soup-with-vegetables-png-image_13169418.png"
+  },
+  { 
+    "category_id": 10, 
+    "name": "Snacks",
+    "image_url": "https://cdn-icons-png.flaticon.com/512/859/859293.png" 
+  }
 ]

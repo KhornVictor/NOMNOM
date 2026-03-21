@@ -12,7 +12,7 @@
 @import url("./src/styles/pages/history.css");
 @import url("./src/styles/pages/setting.css");
 
-
+@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 :root {
   --brand-bg-cream: #fff7ef;
@@ -38,4 +38,12 @@
   --brand-gray-500: #6b7280;
   --brand-gray-600: #4b5563;
   --brand-gray-900: #111827;
+}
+
+
+.app-container {
+  background-color: var(--brand-bg-cream);
+  color: var(--brand-text-dark);
+  font-family: "SN Pro";
+  overflow: hidden;
 }

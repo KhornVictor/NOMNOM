@@ -57,6 +57,10 @@ body {
   font-size: 0.875rem;
 }
 
+.mount-left {
+  max-width: 300px;
+}
+
 @media (max-width: 1200px) {
   .food-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
