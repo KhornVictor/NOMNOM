@@ -16,6 +16,7 @@ export const initSidebarNavigation = (root = document) => {
     home: "./src/pages/home/home.html",
     food: "./src/pages/home/food.html",
     history: "./src/pages/home/history.html",
+    restaurant: "./src/pages/home/restaurant.html",
     settings: "./src/pages/home/setting.html",
   };
 
@@ -55,6 +56,10 @@ export const initSidebarNavigation = (root = document) => {
 
     if (route === "food") {
       await initFoodPage(contentArea);
+    }
+
+    if (route === "restaurant") {
+      await initResturantBox(contentArea);
     }
 
     setActiveByRoute(route);

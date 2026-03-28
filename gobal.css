@@ -3,16 +3,16 @@
 @import url("./src/styles/mainContent.css");
 @import url("./src/styles/rightSideBar.css");
 @import url("./src/styles/bottomSideBar.css");
-@import url("./src/styles/app.css"); 
+@import url("./src/styles/app.css");
 
 /* {page} */
 @import url("./src/styles/pages/home.css");
 @import url("./src/styles/pages/food.css");
-@import url("./src/styles/pages/restaurant.css");
+@import url("./src/styles/pages/resturant.css");
 @import url("./src/styles/pages/history.css");
 @import url("./src/styles/pages/setting.css");
 
-@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 
 :root {
   --brand-bg-cream: #fff7ef;
@@ -39,7 +39,6 @@
   --brand-gray-600: #4b5563;
   --brand-gray-900: #111827;
 }
-
 
 .app-container {
   background-color: var(--brand-bg-cream);
