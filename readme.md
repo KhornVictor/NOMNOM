@@ -116,3 +116,6 @@ Backend services such as database, authentication, and payment systems are not i
 ## 📄 License
 
 This project is developed for educational purposes.
+
+<img src="./public/images/NomNom.png"/>
+https://fooditc.netlify.app/
