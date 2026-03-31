@@ -1,5 +1,7 @@
 # 🍽️ Online Food Ordering Website (Frontend)
 
+<img src="./public/images/logo.png"/>
+
 ## 👥 Team Members — Team 04
 
 | No | Student ID | Name              | Gender | Group | Team    |
