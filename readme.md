@@ -35,7 +35,7 @@ This system focuses only on the **client-side design and user experience (UI/UX)
 
 * Customers who want to browse food menus
 * Users who want to order food online
-* Anyone accessing the system via web browser
+* Anyone accessing the system via web browser   
 
 ---
 
