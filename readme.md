@@ -1,4 +1,4 @@
-# 🍽️ Online Food Ordering Website (Frontend)
+# 🍽️ Nom Nom Ordering Website (Frontend)
 
 <img src="./public/images/logo.png"/>
 
